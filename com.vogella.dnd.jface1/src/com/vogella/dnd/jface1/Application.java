@@ -19,7 +19,7 @@ public class Application implements IApplication {
 			if (returnCode == PlatformUI.RETURN_RESTART) {
 				return IApplication.EXIT_RESTART;
 			}
-	//		return IApplication.EXIT_OK;
+			return IApplication.EXIT_OK;
 		} finally {
 			display.dispose();
 		}
