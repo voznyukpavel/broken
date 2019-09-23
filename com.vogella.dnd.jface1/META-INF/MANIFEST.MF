@@ -5,7 +5,6 @@ Bundle-SymbolicName: com.vogella.dnd.jface1;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: VOGELLA
 Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.ui,
  org.apache.felix.scr,
  org.eclipse.equinox.util,
  org.eclipse.equinox.event
