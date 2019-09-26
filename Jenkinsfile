@@ -8,14 +8,15 @@ agent any
       }     
       stage('Test') {          
         steps {             
-           echo 'Testing..'           
-         }        
+        echo 'Testing..'           
+           }        
        }       
        stage('Deploy') {           
            steps {               
             echo 'Deploying....'           
         }  
-        stage('My stage') {           
+      }
+       stage('My stage') {           
            steps {               
             echo 'Deploying....'           
         }     
@@ -23,10 +24,10 @@ agent any
  }
  }
  node {stage('Build'){
- 	echo 'Building....'
+ 	 echo 'Building....'
  }stage('Test'){
-    echo 'Building....'
+     echo 'Testing....'
  }stage('Deploy'){
-    echo 'Deploying....'}
+     echo 'Deploying....'}
  }
  
