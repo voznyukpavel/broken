@@ -20,7 +20,7 @@ agent any
            steps {               
             echo 'My stage....'           
         }     
-      }
+    }
  }
 }
  
