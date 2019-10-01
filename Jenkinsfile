@@ -21,6 +21,11 @@ agent any
             echo 'My stage....'           
         }     
     }
+           stage('END') {           
+           steps {               
+            echo 'Built....'           
+        }  
+      }
  }
 }
  
