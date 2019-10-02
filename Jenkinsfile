@@ -20,7 +20,7 @@ agent any
       }
        stage('My stage') {           
            steps {               
-        //    bat'make'
+            bat'make'
             echo 'My stage....'           
         }     
     }

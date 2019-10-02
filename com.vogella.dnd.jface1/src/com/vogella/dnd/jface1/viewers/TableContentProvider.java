@@ -3,7 +3,6 @@ package com.vogella.dnd.jface1.viewers;
 import java.util.List;
 
 import org.eclipse.jface.viewers.IStructuredContentProvider;
-import org.eclipse.jface.viewers.Viewer;
 
 import com.vogella.dnd.jface1.model.Todo;
 

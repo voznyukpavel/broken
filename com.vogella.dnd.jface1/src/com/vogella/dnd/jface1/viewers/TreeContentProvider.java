@@ -3,7 +3,6 @@ package com.vogella.dnd.jface1.viewers;
 import java.util.List;
 
 import org.eclipse.jface.viewers.ITreeContentProvider;
-import org.eclipse.jface.viewers.Viewer;
 
 public class TreeContentProvider implements ITreeContentProvider {
 
