@@ -3,6 +3,7 @@ agent any
  stages{
 	stage('Build') {          
       steps {               
+       bat'make'
    		  echo 'Building..'           
            }       
       }     
@@ -27,7 +28,7 @@ agent any
             echo 'Built....'           
         }  
       }
- }
+  }
 }
  
 
