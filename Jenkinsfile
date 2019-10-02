@@ -18,6 +18,7 @@ agent any
       }
        stage('My stage') {           
            steps {               
+            bat'My stage batting'
             echo 'My stage....'           
         }     
     }
