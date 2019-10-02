@@ -4,6 +4,7 @@ agent any
 	stage('Build') {          
       steps {               
        bat'make'
+       archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
    		  echo 'Building..'           
            }       
       }     
