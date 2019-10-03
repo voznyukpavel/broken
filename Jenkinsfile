@@ -1,11 +1,15 @@
 pipeline {
 agent any
  stages{
-	stage('Build') {          
+	stage('Build') {  
+	 when {               
+	 expression {
+	             currentBuild.result == null || currentBuild.result == 'SUCCESS'
+	            }             
+	      }        
       steps {               
-       bat'make'
-      // archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
-   		  echo 'Building..'           
+             bat'make'
+   		     echo 'Building..'           
            }       
       }     
       stage('Test') {          
@@ -24,7 +28,7 @@ agent any
             echo 'My stage....'           
         }     
     }
-           stage('END') {           
+      stage('END') {           
            steps {               
             echo 'Built....'           
         }  
