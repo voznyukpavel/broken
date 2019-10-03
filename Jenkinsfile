@@ -28,7 +28,7 @@ agent any
       }
        stage('My stage') {           
            steps {               
-            bat'make'
+            echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}" 
             echo 'My stage....'           
         }     
     }
