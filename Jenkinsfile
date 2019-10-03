@@ -2,11 +2,7 @@ pipeline {
 agent any
  stages{
 	stage('Build') {  
-	 when {               
-	 expression {
-	             currentBuild.result == null || currentBuild.result == 'SUCCESS'
-	            }             
-	      }        
+      
       steps {               
              bat'make'
    		     echo 'Building..'           
@@ -17,7 +13,12 @@ agent any
            echo 'Testing..'           
            }        
        }       
-       stage('Deploy') {           
+       stage('Deploy') {    
+       	 when{              
+	        expression {
+	                    currentBuild.result == null || currentBuild.result == 'SUCCESS'
+	                 }           
+	         }         
            steps {               
             echo 'Deploying....'           
         }  
