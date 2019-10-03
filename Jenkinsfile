@@ -23,7 +23,8 @@ agent any
 	                 }
 	         }         
            steps {               
-            echo 'Deploying....'           
+            echo 'Deploying....'
+                       
         }  
       }
        stage('My stage') {           
