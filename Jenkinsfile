@@ -9,14 +9,17 @@ agent any
            }       
       }     
       stage('Test') {          
-        steps {             
+        steps {       
+        	 bat'make check || true'
+			 junit '**/target/*.xml' 
            echo 'Testing..'           
            }        
        }       
        stage('Deploy') {    
        	 when{              
 	        expression {
-	                    currentBuild.result != null || currentBuild.result == 'SUCCESS'
+	                  //  currentBuild.result != null || currentBuild.result == 'SUCCESS'
+	                  currentBuild.result == null || currentBuild.result == 'SUCCESS'
 	                 }
 	         }         
            steps {               
