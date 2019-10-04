@@ -12,7 +12,7 @@ agent any
         steps {       
         	 bat'make check || true'
 			 junit '**/target/*.xml' 
-           echo 'Testing..'           
+            echo 'Testing..'           
            }        
        }       
        stage('Deploy') {    
