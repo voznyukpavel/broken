@@ -22,7 +22,7 @@ agent any
 	                  currentBuild.result == null || currentBuild.result == 'SUCCESS'
 	                 }
 	         }         
-           steps {               
+           steps {     //           
             echo 'Deploying....'
         }  
       }
