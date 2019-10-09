@@ -7,7 +7,7 @@ agent any
              bat'make'
              
            //  bat "cd com.vogella.dnd.jface1"
-           //  bat "mvn compille "
+             bat "mvn -f /cd com.vogella.dnd.jface1/pom.xml "
    		     echo 'Building..'           
            }       
       }     
