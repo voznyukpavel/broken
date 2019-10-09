@@ -4,10 +4,8 @@ agent any
 	stage('Build') {  
       
       steps {               
-             bat'make'
-             
-             bat "cd com.vogella.dnd.jface1"
-             bat "mvn compille "
+          //   bat'make'
+              bat "mvn compille "
    		     echo 'Building..'           
            }       
       }     
