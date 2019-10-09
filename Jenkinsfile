@@ -5,7 +5,7 @@ agent any
       
       steps {               
              bat'make'
-             bat "mvn -f C:/Users/h239267/git/broken/com.vogella.dnd.jface1/pom.xml "
+             bat "mvn compile -f C:/Users/h239267/git/broken/com.vogella.dnd.jface1/pom.xml "
    		     echo 'Building..'           
            }       
       }     
