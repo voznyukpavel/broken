@@ -5,13 +5,14 @@ agent any
       
       steps {               
              bat'make'
+             bat "mvn  compille "
    		     echo 'Building..'           
            }       
       }     
       stage('Test') {          
         steps {       
         	 bat'make check || true'
-			 junit '**/target/*.xml' 
+			// junit '**/target/*.xml' 
             echo 'Testing..'           
            }        
        }       

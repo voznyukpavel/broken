@@ -1,5 +1,7 @@
 package com.vogella.dnd.jface1;
 
+import org.apache.log4j.Logger;
+
 import javax.annotation.PostConstruct;
 
 import org.eclipse.jface.viewers.TableViewer;
@@ -30,6 +32,8 @@ public class TableView extends ViewPart{
         viewer.setContentProvider(new TableContentProvider());
         viewer.setLabelProvider(new TableLabelProvider());
         viewer.setInput(ContentProvider.INSTANCE.getModel());
+        Logger logger = Logger.getLogger(TableView.class);
+        logger.info("this is log");
     }
 
 	@Override
