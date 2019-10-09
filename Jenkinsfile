@@ -8,7 +8,6 @@ agent any
               withMaven( maven: 'maven-3.5.0',
                                     mavenSettingsConfig: 'maven-settings-default')
              bat "mvn  compille "
-             )
    		     echo 'Building..'           
            }       
       }     
