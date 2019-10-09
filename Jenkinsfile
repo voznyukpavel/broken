@@ -6,7 +6,7 @@ agent any
       steps {               
              bat'make'
              
-                                   bat "cd com.vogella.dnd.jface1"
+             bat "cd com.vogella.dnd.jface1"
              bat "mvn  compille "
    		     echo 'Building..'           
            }       
