@@ -4,7 +4,7 @@ agent any
 	stage('Build') {  
       
       steps {               
-             bat'make'
+             //bat'make'
              bat "mvn compile -f C:/Users/h239267/git/broken/com.vogella.dnd.jface1/pom.xml "
    		     echo 'Building..'           
            }       
