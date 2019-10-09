@@ -5,8 +5,8 @@ agent any
       
       steps {               
              bat'make'
-              withMaven( maven: 'maven-3.5.0',
-                                    mavenSettingsConfig: 'maven-settings-default')
+             
+                                   bat "cd com.vogella.dnd.jface1"
              bat "mvn  compille "
    		     echo 'Building..'           
            }       
