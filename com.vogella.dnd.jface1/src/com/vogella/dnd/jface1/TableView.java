@@ -18,7 +18,7 @@ import com.vogella.dnd.jface1.viewers.TableContentProvider;
 import com.vogella.dnd.jface1.viewers.TableLabelProvider;
 
 public class TableView extends ViewPart{
-	public static final String ID = "com.vogella.dnd.jface1.TableView";
+  public static final String ID = "com.vogella.dnd.jface1.TableView";
 
     @PostConstruct
     public void createPartControl(Composite parent) {
@@ -32,11 +32,14 @@ public class TableView extends ViewPart{
         viewer.setContentProvider(new TableContentProvider());
         viewer.setLabelProvider(new TableLabelProvider());
         viewer.setInput(ContentProvider.INSTANCE.getModel());
-        Logger logger = Logger.getLogger(TableView.class);
-        logger.info("this is log");
+      
     }
-
-	@Override
-	public void setFocus() {
-	}
+    private static final org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(TableView.class);
+  @Override
+  public void setFocus() {
+     
+      logger.info("this is log");
+       logger.error("this is log");
+       logger.fatal("this is log");
+  }
 }
