@@ -34,12 +34,12 @@ public class TableView extends ViewPart{
         viewer.setInput(ContentProvider.INSTANCE.getModel());
       
     }
-    private static final org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(TableView.class);
+  //  private static final org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(TableView.class);
   @Override
   public void setFocus() {
      
-      logger.info("this is log");
-       logger.error("this is log");
-       logger.fatal("this is log");
+   //   logger.info("this is log");
+   //    logger.error("this is log");
+   //    logger.fatal("this is log");
   }
 }
