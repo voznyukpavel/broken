@@ -1,6 +1,6 @@
 package com.vogella.dnd.jface1;
 
-import org.apache.log4j.Logger;
+
 
 import javax.annotation.PostConstruct;
 
