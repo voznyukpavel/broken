@@ -4,7 +4,7 @@ agent any
 	stage('Build') {  
       
       steps {               
-             //bat'make'
+             bat'make'
              bat "mvn -f C:/Users/h239267/git/broken/com.vogella.dnd.jface1/pom.xml compile  "
    		     echo 'Building..'           
            }       
@@ -12,15 +12,15 @@ agent any
       stage('Test') {          
         steps {       
         	 bat'make check || true'
-			// junit '**/target/*.xml' 
+			//// junit '**/target/*.xml' 
             echo 'Testing..'           
            }        
        }       
        stage('Deploy') {    
        	 when{              
 	        expression {
-	                  //  currentBuild.result != null || currentBuild.result == 'SUCCESS'
-	                  currentBuild.result == null || currentBuild.result == 'SUCCESS'
+	                  // currentBuild.result != null || currentBuild.result == 'SUCCESS'
+	                     currentBuild.result == null || currentBuild.result == 'SUCCESS'
 	                 }
 	         }         
            steps {     //           
