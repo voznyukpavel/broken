@@ -27,8 +27,9 @@
 	</dependencies>
 	<repositories>
     <repository>
-        <id>central</id>
-        <url>http://repo1.maven.org/maven2</url>
+         <id>UK</id>
+      <name>UK Central</name>
+      <url>http://uk.maven.org/maven2</url>
         <releases>
                 <enabled>false</enabled>
         </releases>
@@ -39,8 +40,9 @@
 </repositories>
 <pluginRepositories>
     <pluginRepository>
-        <id>central</id>
-        <url>http://repo1.maven.org/maven2</url>
+          <id>UK</id>
+      <name>UK Central</name>
+      <url>http://uk.maven.org/maven2</url>
         <releases>
             <enabled>false</enabled>
         </releases>
