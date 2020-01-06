@@ -5,7 +5,7 @@
 	<groupId>com.vogella.dnd.jface1</groupId>
 	<artifactId>com.vogella.dnd.jface1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<build>
+	<!-- <build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
@@ -17,7 +17,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
+	</build> -->
 	<dependencies>
 		<dependency>
 			<groupId>log4j</groupId>
