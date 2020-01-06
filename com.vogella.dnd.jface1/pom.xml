@@ -27,9 +27,8 @@
 	</dependencies>
 	<repositories>
     <repository>
-         <id>UK</id>
-      <name>UK Central</name>
-      <url>http://uk.maven.org/maven2</url>
+        <id>central</id>
+        <url>http://repo1.maven.org/maven2</url>
         <releases>
                 <enabled>false</enabled>
         </releases>
@@ -40,9 +39,8 @@
 </repositories>
 <pluginRepositories>
     <pluginRepository>
-          <id>UK</id>
-      <name>UK Central</name>
-      <url>http://uk.maven.org/maven2</url>
+        <id>central</id>
+        <url>http://repo1.maven.org/maven2</url>
         <releases>
             <enabled>false</enabled>
         </releases>
@@ -51,4 +49,18 @@
         </snapshots>
     </pluginRepository>
 </pluginRepositories>
+ <mirrors>
+    <!-- mirror
+     | Specifies a repository mirror site to use instead of a given repository. The repository that
+     | this mirror serves has an ID that matches the mirrorOf element of this mirror. IDs are used
+     | for inheritance and direct lookup purposes, and must be unique across the set of mirrors.
+     |-->
+    <mirror>
+            <id>UK</id>
+      <name>UK Central</name>
+      <url>http://uk.maven.org/maven2</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+     
+  </mirrors>
 </project>
