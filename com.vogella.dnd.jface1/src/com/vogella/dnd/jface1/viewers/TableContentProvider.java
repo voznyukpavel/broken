@@ -10,6 +10,7 @@ public class TableContentProvider implements IStructuredContentProvider {
 
     @Override
     public Object[] getElements(Object inputElement) {
+        @SuppressWarnings("unchecked")
         List<Todo> list = (List<Todo>) inputElement;
         return list.toArray();
     }

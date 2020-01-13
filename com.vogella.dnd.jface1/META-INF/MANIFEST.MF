@@ -1,7 +1,18 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Ignored
-Bundle-SymbolicName: Ignored
-Bundle-Version: 0.0.1
-Require-Bundle: org.eclipse.xsd
-Bundle-Vendor: Ignored
+Bundle-Name: Jface1
+Bundle-SymbolicName: com.vogella.dnd.jface1;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: VOGELLA
+Require-Bundle: org.eclipse.core.runtime,
+ org.apache.felix.scr,
+ org.eclipse.equinox.util,
+ org.eclipse.equinox.event,
+ org.eclipse.ui;bundle-version="3.113.0"
+Automatic-Module-Name: com.vogella.dnd.jface1
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.vogella.dnd.jface1,
+ com.vogella.dnd.jface1.dnd,
+ com.vogella.dnd.jface1.model,
+ com.vogella.dnd.jface1.viewers
+
