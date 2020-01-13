@@ -27,7 +27,6 @@ public class MyDragListener implements DragSourceListener {
         if (TextTransfer.getInstance().isSupportedType(event.dataType)) {
             event.data = firstElement.getShortDescription() + " " + firstElement.getLongDescription();
         }
-
     }
 
     @Override
