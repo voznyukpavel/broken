@@ -16,7 +16,7 @@ public class MyDragListener implements DragSourceListener {
 
     @Override
     public void dragFinished(DragSourceEvent event) {
-        System.out.println("Finshed Drag");
+        System.out.println("Finshed  Drag");
     }
 
     @Override
