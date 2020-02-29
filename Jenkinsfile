@@ -5,10 +5,10 @@ agent any
       
       steps {               
           //   bat'make'
-             bat "mvn -f C:/Users/h239267/git/broken/com.vogella.dnd.jface1/pom.xml compile  "
+             bat "mvn -f C:/Users/Pavel/git/broken/com.vogella.dnd.jface1/pom.xml compile  "
    		     echo 'Building..'           
            }       
-      }     
+      }     //
       stage('Test') {          
         steps {       
         	 bat'make check || true'
