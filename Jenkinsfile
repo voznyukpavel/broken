@@ -5,7 +5,7 @@ agent any
       
       steps {               
           //   bat'make'
-             bat "mvn -f C:/Users/Pavel/git/broken/com.vogella.dnd.jface1/pom.xml install  "
+             bat "mvn -f C:/Users/Pavel/git/broken/com.vogella.dnd.jface1/pom.xml install -Dstyle.color=always"
    		     echo 'Building..'           
            }       
       }     //
